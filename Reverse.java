@@ -1,3 +1,7 @@
+//time complexity-->n
+//space complexity-->constant 1
+
+
 import java.util.Scanner;
 
 public class Reverse {
