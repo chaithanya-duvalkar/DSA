@@ -1,4 +1,4 @@
-//total subarrays calculated-->sum of n numbers-->n(n+1)/2
+//time complexity-->O(n^3)-->brute force approach
 
 
 import java.util.Scanner;
@@ -9,6 +9,8 @@ public class MaxSubArray {
     {
         int max_sum=Integer.MIN_VALUE;
         int cur_sum=0;
+
+
         for(int i=0;i<n;i++){
               int start=i;
               for(int j=i;j<n;j++){
@@ -16,7 +18,7 @@ public class MaxSubArray {
                 int last=j;
                 for(int k=start;k<=last;k++)
                 {
-                   cur_sum+=array[k];
+                   cur_sum+=array[k];      //calculates the sum of the elements of array
                 }
                 System.out.println(cur_sum);
                 if(max_sum<cur_sum){

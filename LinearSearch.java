@@ -1,5 +1,8 @@
 
-//time complexity-->n
+//time complexity-->O(n)
+//best-->1
+//worst-->n
+
 public class LinearSearch {
 
     public static int linearsearch(int[] numbers,int key)
