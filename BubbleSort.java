@@ -1,3 +1,6 @@
+//time complexity-->O(n^2)
+//in bubble sort the largest element in the array is bubbled up and sent to the end of the array
+
 import java.util.Scanner;
 
 public class BubbleSort {
