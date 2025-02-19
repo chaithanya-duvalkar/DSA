@@ -1,7 +1,7 @@
 //time complexity-->O(n^2)
 //in selection sort the smallest element is picked and sent to the start index of the array
 //the first element is considered as smallest element and compared with next elements
-//dividing the array as sorted part and unsorted part
+
 
 import java.util.*;
 
@@ -14,7 +14,8 @@ public class SelectionSort {
             int minPos=i;  //storing index not the value
             for(int j=i+1;j<n;j++){
                 //loop
-                if(array[minPos]>array[j]){
+                if(array[minPos]>array[j])   // Change '>' to '<' for descending order
+                {
                     minPos=j;
                 }
             }
@@ -23,11 +24,11 @@ public class SelectionSort {
                 int temp=array[minPos];
                 array[minPos]=array[i];
                 array[i]=temp;
-                swap++;
+            //    swap++;
             }
           
         }
-       System.out.println("no. of swap="+swap);
+    //   System.out.println("no. of swap="+swap);
     }
 
     public static void printarray(int[] array,int n){
