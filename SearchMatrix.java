@@ -11,10 +11,43 @@ public class SearchMatrix {
 
     public static boolean staircasesearch(int[][] matrix,int n,int key)
     {
+    
+    /* 
+        //start searching from rightmost value present at the top of matrix
+
         int row=0;
         int col=n-1;
+    
+        while(row<n && col>=0)   //(0,m-1)
+        {
+            if(matrix[row][col]==key)
+            {
+                System.out.println(key+" key found at ("+row+","+col+")");
+                return true;
+            }
+            else if(key<matrix[row][col])   //key<cell value
+            {
+                col--;    //left
+            }
+            else
+            {
+                row++;     //bottom
+            }
 
-        while(row<n && col>=0)
+        }
+            
+        System.out.println("key not found");
+        return false;
+
+        */
+
+
+        //start searching from leftmost value present at the bottom of matrix
+
+        int row=n-1;
+        int col=0;
+
+        while( row>=0 && col<n-1 )
         {
             if(matrix[row][col]==key)
             {
@@ -23,16 +56,15 @@ public class SearchMatrix {
             }
             else if(key<matrix[row][col])
             {
-                col--;
+                row--;      //top
             }
-            else
-            {
-                row++;
+            else{
+                col++;      //right
             }
-
         }
         System.out.println("key not found");
         return false;
+
     }
 
     public static void main(String[] args) {
