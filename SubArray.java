@@ -25,7 +25,7 @@ public class SubArray {
     }
 
      public static void main(String[] args) {
-         Scanner sc=new Scanner(System.in);
+        Scanner sc=new Scanner(System.in);
         int n;
         System.out.println("enter n");
         n=sc.nextInt();
