@@ -7,7 +7,7 @@ public class DiagonalMatrix
     {
          int sum=0;
 
-         /* 
+   /*       
          for(int i=0;i<n;i++)        //time complexity--->O(n^2)
          {
             for(int j=0;j<m;j++)
@@ -24,8 +24,8 @@ public class DiagonalMatrix
             }
          }
          return sum;
-         */
-
+         
+*/
          for(int i=0;i<n;i++)      //time complexity--->O(n)
         {
             //primary diagonal
