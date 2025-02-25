@@ -1,4 +1,4 @@
-
+//trap rain water
 //time complexity-->O(n)
 
 import java.util.Scanner;
