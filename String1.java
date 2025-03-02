@@ -35,6 +35,9 @@ public class String1 {
 
         */
 
+        /*
+        //"==" & "equals()"
+
         String s1="chai";
         String s2="chai";
         String s3=new String("chai");
@@ -48,7 +51,7 @@ public class String1 {
             System.out.println("strings are not equal");
         }
 
-        /* 
+        
         here output will be strings are not equal bcz == operator compares the reference or memory location of objects in heap,
         whether they point to the same location or not
         hence we should use s1.equals(s3) function
@@ -62,10 +65,10 @@ public class String1 {
             System.out.println("strings are not equal");
         }
 
-        */
+        
 
         //Here this equals function checks for the actual string content(value) stored are equal or not
-        
+
         if( s1.equals(s3))
         {
              System.out.println("strings are equal");
@@ -74,6 +77,49 @@ public class String1 {
             System.out.println("strings are not equal");
         }
 
+        */
+
+        /* 
+        //access substring using substring()
+        String str="chaithanya Duvalkar";
+        System.out.println(str.substring(11,19));
+
+        */
+
+        /* 
+        //to print the largest string from a given set of strings
+        //time complexity-->O(x*N)
+
+        String names[]={"putti","ishwara","geetha","thammu","ammi","chukki"};
+
+        String largest=names[0];
+
+        for(int i=1;i<names.length;i++)
+        {
+            if(largest.compareTo(names[i]) < 0)
+            {
+                largest=names[i];
+            }
+        }
+        System.out.println(largest);
+
+        */
+
+        /* 
+        //stringbuilder
+        StringBuilder sb= new StringBuilder("");
+
+        for(char ch='a';ch<='z';ch++)
+        {
+            sb.append(ch);
+        }
+
+        System.out.println(sb);
+
+        */
+
+
+       
     }
     
 }
