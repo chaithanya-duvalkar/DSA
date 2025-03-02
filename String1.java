@@ -17,6 +17,7 @@ public class String1 {
       //  String str="abc";
       //  String str=new String("xyz");
 
+      /* 
         String first_name="Chaithanya";
         String last_name="S Duvalkar";
         
@@ -31,6 +32,48 @@ public class String1 {
 
         //printletters
         printletters(full_name);
+
+        */
+
+        String s1="chai";
+        String s2="chai";
+        String s3=new String("chai");
+
+        //for s1 and s2
+        if(s1 == s2)
+        {
+            System.out.println("strings are equal");
+        }
+        else{
+            System.out.println("strings are not equal");
+        }
+
+        /* 
+        here output will be strings are not equal bcz == operator compares the reference or memory location of objects in heap,
+        whether they point to the same location or not
+        hence we should use s1.equals(s3) function
+
+        //for s1 and s3
+        if(s1 == s3)
+        {
+            System.out.println("strings are equal");
+        }
+        else{
+            System.out.println("strings are not equal");
+        }
+
+        */
+
+        //Here this equals function checks for the actual string content(value) stored are equal or not
+        
+        if( s1.equals(s3))
+        {
+             System.out.println("strings are equal");
+        }
+        else{
+            System.out.println("strings are not equal");
+        }
+
     }
     
 }
