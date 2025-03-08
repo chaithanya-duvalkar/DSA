@@ -1,6 +1,7 @@
 /*
 Given a route containing 4 directions (E,W,S,N), find the shortest path to reach destination.
 Ex:"WNEENESENNN"
+
 */
 
 import java.util.*;
